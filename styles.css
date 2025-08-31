@@ -1,14 +1,18 @@
-#container{
-	margin: 20px;
-	
+#container {
+  margin: 20px;
+  font-size: 18px;
 }
-#container::before{
-	content:'"Before Element "';
-	color:red;
-	font-size:20px;
+
+/* Insert text BEFORE the content */
+#container::before {
+  content: " Before Element  ";
+  color: #f00;        /* red text */
+  font-size: 20px;
 }
-#container::after{
-	content:'" After Element"';
-	color:red;
-	font-size:20px
+
+/* Insert text AFTER the content */
+#container::after {
+  content: "  After Element ";
+  color: #f00;        /* red text */
+  font-size: 20px;
 }
